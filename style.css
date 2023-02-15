@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    margin:auto;
+    
+}
+h1{
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width:0.5px;
+}
+input{
+    padding:5px;
+    background-color:rgb(45, 44, 61);
+    border-style: none;
+    border-width: 3px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    border-bottom-color:rgb(255, 0, 149);
+    caret-color: #ff0055;
+    outline-style: none;
+    
+    
+}
+input:hover{
+    border-style: ridge;
+    animation-name:mov2;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    outline-style: none;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+.container{
+    height:300px;
+    width:400px;
+    border-style: ridge;
+    border-color: black;
+    animation-name:mov;
+    animation-duration:1.5s;
+    animation-iteration-count: infinite;
+    border-radius:25px;
+}
+body
+{
+    background-color: rgb(45, 44, 61);
+}
+@keyframes mov{
+   0%{
+    border-bottom-color: aqua;
+  
+   }
+   25%{
+    border-left-color: aqua;
+   }
+   50%
+   {
+    border-top-color:#ff0055;
+   }
+   100%
+   {
+    border-right-color: #ff0055;
+   }
+}
+@keyframes mov2{
+    0%{
+     border-bottom-color: rgb(0, 255, 255);
+     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+   
+    }
+    25%{
+     border-bottom-color: rgb(199, 6, 103);
+     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    }
+    50%
+    {
+     border-bottom-color:#00ccff;
+     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    }
+    100%
+    {
+     border-bottom-color: #ff0055;
+     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    }
+ }
+ button{
+    background-image: linear-gradient( rgb(125, 122, 156), rgb(45, 44, 61));
+    border-radius: 15px;
+    padding: 5px;
+    animation-name:mov;
+    animation-duration:0.8s;
+    animation-iteration-count: infinite;
+    
+ }
+ 
+.footer{
+    background-color: black;
+    left:0;
+    bottom:0;
+    position: fixed;
+    width:100%;
+}
